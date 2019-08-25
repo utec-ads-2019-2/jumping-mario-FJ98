@@ -7,11 +7,11 @@ int main() {
     for (int i = 1; i <= testCases; ++i) {
         std::cin >> numberOfWalls;
         int arr[numberOfWalls];
-        int currentWall = 0, highJump = 0, lowJump = 0;
+        int heightWall = 0, highJump = 0, lowJump = 0;
 
         for (int j = 0; j < numberOfWalls; ++j) {
-            std::cin >> currentWall;
-            arr[j] = currentWall;
+            std::cin >> heightWall;
+            arr[j] = heightWall;
 
             if (j == 0) continue;
             if (arr[j] > arr[j - 1]) ++highJump;
